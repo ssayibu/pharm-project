@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2d87f0;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .button-group {
+            margin: 20px 0;
+        }
+
+        .button-group a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 1em;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button-login {
+            background-color: #2d87f0;
+        }
+
+        .button-register {
+            background-color: #4caf50;
+        }
+
+        .button-login:hover {
+            background-color: #246ec7;
+        }
+
+        .button-register:hover {
+            background-color: #3d8f43;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Pharmacy Management System</h1>
+        <p>Manage your pharmacy efficiently with our system. Keep track of inventory, sales, and more.</p>
+
+        <div class="button-group">
+            <a href="login.php" class="button-login">Login</a>
+            <a href="register.php" class="button-register">Register</a>
+        </div>
+
+        <div class="button-group">
+            <a href="add_medicine.php" class="button-login">Add Medicine</a>
+            <a href="update_stock.php" class="button-login">Update Stock</a>
+            <a href="manage_users.php" class="button-login">Manage Users</a>
+            <a href="record_sale.php" class="button-login">Record Sale</a>
+        </div>
+
+        <div class="footer">
+            &copy; <?= date("Y") ?> Pharmacy Management System. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
